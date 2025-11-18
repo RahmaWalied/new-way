@@ -1,0 +1,378 @@
+
+.about-one{
+	position:relative;
+	z-index:1;
+	overflow: hidden;
+	padding: 120px 0px 80px;
+	background-color: #010101;
+}
+
+.about-one_content-column{
+	position:relative;
+	margin-bottom: 30px;
+}
+
+.about-one_content{
+	position:relative;
+}
+
+.about-one_subtitle{
+	position:relative;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+
+.about-one_text{
+	position:relative;
+	font-size: 16px;
+	line-height: 28px;
+	color: var(--color-three);
+}
+
+.about-one_sketch{
+	position:relative;
+	text-align:right;
+	margin-top: -15px;
+}
+
+.about-one_list{
+	position:relative;
+}
+
+.about-one_list li{
+	position:relative;
+	font-size: 18px;
+	padding-left: 25px;
+	margin-bottom: 18px;
+	color: var(--color-two);
+}
+
+.about-one_list li:before{
+	position:absolute;
+	content:'';
+	left:0px;
+	top:0px;
+	content: "\f12c";
+	font-family: "flaticon_interior";
+}
+
+.about-one .lists-outer{
+	position:relative;
+	margin-top: 30px;
+}
+
+.about-one .button-box{
+	position:relative;
+	margin-top: 25px;
+	gap: 30px;
+}
+
+.about-one .button-box .signature{
+	position:relative;
+}
+
+.about-one_images-column{
+	position:relative;
+	text-align:right;
+}
+
+.about-one_images-column:before{
+	position:absolute;
+	content:'';
+	right:60%;
+	top:-120px;
+	bottom:-120px;
+	width: 500%;
+	z-index:-1;
+	  background-image:radial-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('../images/projects/about.webp');
+	border-right: 8px solid var(--color-two);
+}
+
+.about-one_image-outer{
+	position:relative;
+	padding-bottom: 250px;
+	display: inline-block;
+}
+
+.about-one_image{
+	position:relative;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.about-one_image:before{
+	position:absolute;
+	content:'';
+	right: -15px;
+	top: -15px;
+	width: 120px;
+	height: 120px;
+	border-top: 5px solid var(--main-color);
+	border-right: 5px solid var(--main-color);
+}
+
+.about-one_image-two{
+	position:absolute;
+	left:-120px;
+	bottom:0px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.about-one_image-two:before{
+	position:absolute;
+	content:'';
+	right: -15px;
+	bottom: -15px;
+	width: 120px;
+	height: 120px;
+	border-bottom: 5px solid var(--color-two);
+	border-right: 5px solid var(--color-two);
+}
+
+.about-one_letter{
+	position:absolute;
+	right:0px;
+	bottom: -20px;
+	line-height:1em;
+	font-size: 300px;
+	font-weight: 800;
+	background-size: cover;
+    background-position: center;
+	
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+	font-family: "Barlow Condensed", sans-serif;
+}
+
+/*** 
+
+====================================================================
+	About Two
+====================================================================
+
+***/
+
+.about-two{
+	position:relative;
+	padding: 0px 0px 90px;
+}
+
+/*** 
+
+====================================================================
+	About Three
+====================================================================
+
+***/
+
+.about-three{
+	position:relative;
+	padding: 130px 0px 90px;
+}
+
+.about-three_images-column{
+	position:relative;
+	margin-bottom: 30px;
+}
+
+.about-three_image-outer{
+	position:relative;
+	margin-left: -60px;
+	display: inline-block;
+}
+
+.about-three_image-outer:before{
+	position:absolute;
+	content:'';
+	left: -30px;
+    top: -40px;
+	width: 329px;
+	height:643px;
+	background:url(../images/background/pattern-6.png) no-repeat;
+	background-repeat: no-repeat;
+}
+
+.about-three .color-circle{
+	position:absolute;
+	right:110px;
+	bottom:25px;
+	width: 260px;
+	height: 260px;
+	opacity: 0.10;
+	border-radius: 150px;
+	background-color: var(--color-two);
+}
+
+.about-three .color-border{
+	position:absolute;
+	right:90px;
+	bottom:180px;
+	width: 145px;
+	height: 145px;
+	opacity: 0.20;
+	border-radius: 150px;
+	border:1px solid var(--color-two);
+}
+
+.about-three_image{
+	width: 550px;             /* حجم الدائرة */
+    height: 550px;
+    overflow: hidden;  
+	position:relative;
+	overflow: hidden;
+	border-radius: 50%;
+	display:inline-block;
+	border:15px solid var(--main-color);
+}
+
+.about-three_info{
+	position:relative;
+	font-size: 24px;
+	line-height: 30px;
+	margin-bottom: 35px;
+	padding-right: 90px;
+	color: var(--color-two);
+	font-family: "Barlow Condensed", sans-serif;
+}
+
+.about-three_text{
+	position:relative;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.about-three_image-three{
+	position:relative;
+	margin-left: 0px;
+	margin-top: 15px;
+	display: inline-block;
+}
+
+.about-three_image-three:before{
+	position:absolute;
+	content:'';
+	left:-10px;
+	top:-10px;
+	right:10px;
+	bottom:10px;
+	background-color: var(--main-color);
+}
+
+.about-three_options{
+	position:relative;
+	margin-top: 30px;
+	gap: 35px;
+}
+
+
+/* ========================
+   Managers Section - Dark Elegant
+======================== */
+.managers-section {
+  padding: 90px 0;
+  background:#010101;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color:var(--main-color);
+}
+
+/* Manager Card */
+.manager-card {
+  background: #111;
+  border-radius: 18px;
+  padding: 30px 25px;
+  border: 1px solid rgba(179, 128, 44, 0.4);
+  text-align: center;
+  transition: .4s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(179,128,44,0.05);
+}
+
+/* Hover Glow */
+.manager-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 0 35px rgba(179,128,44,0.2);
+  border-color: #e2cba8;
+}
+
+/* Manager Image */
+.manager-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  border: 3px solid #b3802c;
+  transition: .4s;
+}
+
+.manager-card:hover .manager-img {
+  border-color: #e2cba8;
+}
+
+.manager-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .4s ease;
+}
+
+.manager-card:hover .manager-img img {
+  transform: scale(1.1);
+}
+
+/* Text */
+.manager-name {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.manager-position {
+  font-size: 18px;
+  color: #b3802c;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.manager-text {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+/* Social Icons */
+.manager-social a {
+  display: inline-flex;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #b3802c;
+  color: #b3802c;
+  transition: .3s ease;
+  font-size: 16px;
+  margin: 0 6px;
+}
+
+.manager-social a:hover {
+  background: #b3802c;
+  color: #000;
+  transform: scale(1.1);
+}
+

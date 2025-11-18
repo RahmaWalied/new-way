@@ -1,0 +1,155 @@
+/* === Contact One Section === */
+.contact-one {
+  background-color: #121212;
+  color: #f0f0f0;
+  padding: 80px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-one .sec-title {
+  margin-bottom: 60px;
+}
+
+.contact-one .sec-title_title {
+  font-size: 16px;
+  color: #b3802c;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.contact-one .sec-title_heading {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.contact-one .sec-title_text {
+  font-size: 15px;
+  color: white;
+  line-height: 1.7;
+}
+
+/* === Contact Form === */
+.contact-one .contact-form {
+  background-color: #1c1c1c;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.contact-one .contact-form input,
+.contact-one .contact-form textarea {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: #121212;
+  border: 1px solid #333;
+  color: #f0f0f0;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.contact-one .contact-form input:focus,
+.contact-one .contact-form textarea:focus {
+  border-color: #b3802c;
+  outline: none;
+}
+
+.contact-one .theme-btn {
+  background: #b3802c;
+  color: #121212;
+  padding: 15px 30px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-one .theme-btn:hover {
+  background:   radial-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)),;
+}
+
+/* === Map One === */
+.contact-one .map-one {
+  border-radius: 20px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.contact-one .map-one iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* === Infos One Section === */
+.infos-one {
+  background-image:radial-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),url('../images/breadcrumb.jpg'); /* حطي رابط صورتك */
+  background-size: cover;      /* تغطي كامل العنصر */
+  background-position: center; /* توضع في المنتصف */
+  background-repeat: no-repeat; /* تمنع التكرار */
+  background-attachment: fixed; /* الصورة ثابتة أثناء التمرير */
+  min-height:auto;           /* على الأقل طول الشاشة */
+  padding: 60px 0;
+}
+
+.info-block_one-inner {
+  background-color: #121212;
+  padding: 30px 20px;
+  border-radius: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 20px;
+  height: 250px;
+}
+
+.info-block_one-inner:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(240, 194, 123, 0.3);
+}
+
+.info-block_one-icon {
+  font-size: 40px;
+  color: #b3802c;
+  margin-bottom: 15px;
+}
+
+.info-block_one-inner strong {
+  display: block;
+  font-size: 18px;
+  color: #b3802c;
+  margin-bottom: 10px;
+}
+
+.info-block_one-inner .info li {
+  font-size: 14px;
+  color: #ddd;
+  margin-bottom: 5px;
+}
+
+.info-block_one-inner .info li a {
+  color: #f0c27b;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.info-block_one-inner .info li a:hover {
+  color: #d9a44d;
+}
+
+/* === Responsive === */
+@media (max-width: 991px) {
+  .contact-one .sec-title_heading {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-one .sec-title_heading {
+    font-size: 24px;
+  }
+}
