@@ -1484,6 +1484,60 @@
 	border-radius: 2px;
 	transition: all 0.4s ease;
 }
+/* Hide hamburger on desktop */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+/* Show hamburger on mobile */
+@media (max-width: 991px) {
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 48px;
+        height: 48px;
+        padding: 12px;
+        border-radius: 50px;
+        background-color: var(--main-color);
+    }
+
+    .hamburger span {
+        display: block;
+        height: 4px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 2px;
+        transition: all 0.4s ease;
+    }
+}
+
+/* Sidebar hidden by default */
+.about-sidebar {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 300px; /* أو حسب الحاجة */
+    height: 100%;
+    background: #fff;
+    z-index: 9999;
+    transition: right 0.4s ease;
+}
+
+/* Show sidebar */
+.about-sidebar.active {
+    right: 0;
+}
+
+/* Close button */
+.close-sidebar-widget {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
 .about-widget {
     display: flex;
     align-items: center;

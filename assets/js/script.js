@@ -180,7 +180,26 @@
 	    });
 		
 	}
-	
+	// Hamburger & Sidebar
+const hamburger = document.querySelector('.hamburger');
+const sidebar = document.querySelector('.about-sidebar');
+const closeBtn = document.querySelector('.close-sidebar-widget');
+
+hamburger.addEventListener('click', () => {
+    sidebar.classList.add('active');
+});
+
+closeBtn.addEventListener('click', () => {
+    sidebar.classList.remove('active');
+});
+
+// Optional: Close sidebar if click outside
+document.addEventListener('click', (e) => {
+    if (!sidebar.contains(e.target) && !hamburger.contains(e.target)) {
+        sidebar.classList.remove('active');
+    }
+});
+
 	// Open mobile menu
 document.querySelector(".mobile-nav-toggler").onclick = () => {
     document.querySelector(".mobile-menu").classList.add("opened");
