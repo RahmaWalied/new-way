@@ -23,8 +23,8 @@
 	<!-- Color Themes -->
 	<link id="theme-color-file" href="assets/css/color-themes/default-color.css" rel="stylesheet">
 
-	<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-	<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+	<link rel="icon" href="assets/images/logo.png" type="image/x-icon">
 
 	<!-- Responsive -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -56,7 +56,7 @@
 			<!-- Header Lower -->
 			<div class="header-lower">
 				<div class="auto-container">
-					<div class="inner-container bg-black">
+					<div class="inner-container bg-transparent">
 						<div class="d-flex justify-content-between align-items-center">
 							<!-- Logo Box -->
 							<div class="logo-box">
@@ -79,6 +79,7 @@
 											<span class="icon-bar"></span>
 											<span class="icon-bar"></span>
 										</button>
+
 									</div>
 
 									<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
@@ -96,13 +97,16 @@
 							<!-- Main Menu End-->
 							<div class="outer-box d-flex align-items-center flex-wrap">
 								<!-- About Widget -->
-								<span class="about-widget">
-									<span class="hamburger">
-										<span class="top-bun"></span>
-										<span class="meat"></span>
-										<span class="bottom-bun"></span>
-									</span>
-								</span>
+<span class="about-widget">
+    <span class="hamburger">
+        <span class="top-bun"></span>
+        <span class="meat"></span>
+        <span class="bottom-bun"></span>
+    </span>
+    <span class="lang-btn">Ar</span>
+</span>
+
+
 
 								<!-- Mobile Navigation Toggler -->
 								<div class="mobile-nav-toggler"><span class="icon flaticon-menu-1"></span></div>
@@ -134,35 +138,43 @@
 		<!-- About Sidebar -->
 		<div class="about-sidebar">
 			<div class="gradient-layer"></div>
+
 			<!-- Close Button -->
 			<div class="close-sidebar-widget close-button">
 				<span class="fa-solid fa-xmark fa-fw"></span>
 			</div>
+
 			<div class="sidebar-inner">
-				<div class="upper-box">
-					<div class="image">
-						<img src="assets/images/sidebaar.jpg" alt="" />
-					</div>
-					<div class="content-box">
-						<h3>About <span>Interior</span></h3>
-						<div class="text">Built and installed by skilled crafsmen who take Pride in their work and pay
-							attention to the details</div>
-						<ul class="about-sidebar_list">
-							<li>Testimonials</li>
-							<li>Outsourcing</li>
-							<li>Privacy Policy</li>
-							<li>HR Training</li>
-							<li>Careers</li>
-						</ul>
-					</div>
+
+				<!-- Logo Section -->
+				<div class="sidebar-logo">
+					<img src="assets/images/logo.png" alt="Logo" />
 				</div>
+
+				<!-- Description -->
+				<div class="sidebar-description">
+					<h3>About <span>Interior</span></h3>
+					<p>We create modern and elegant interior solutions with clean design and attention to every detail.
+					</p>
+				</div>
+
+				<!-- Links -->
+				<ul class="about-sidebar_list">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Our Services</a></li>
+					<li><a href="#">Testimonials</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Careers</a></li>
+				</ul>
+
 				<!-- Social Box -->
 				<div class="social-box">
-					<a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-					<a href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
-					<a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-					<a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+					<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+					<a href="#"><i class="fa-brands fa-youtube"></i></a>
+					<a href="#"><i class="fa-brands fa-instagram"></i></a>
 				</div>
+
 			</div>
 		</div>
 		<!-- End About Sidebar -->
@@ -301,8 +313,8 @@
 					<div class="widgets-section">
 						<div class="row clearfix">
 
-							<!-- Column 1 -->
-							<div class="col-lg-4 col-md-6 col-sm-12">
+							<!-- Column 1: Logo + Text -->
+							<div class="col-lg-6 col-md-12 col-sm-12 mb-4">
 								<div class="footer-widget footer-two_logo-widget">
 									<div class="footer-logo mb-3">
 										<a href="index.html">
@@ -316,22 +328,35 @@
 								</div>
 							</div>
 
-							<!-- Column 2 -->
-							<div class="col-lg-4 col-md-6 col-sm-12">
+							<!-- Column 2: Pages -->
+							<div class="col-lg-2 col-md-6 col-sm-12 mb-4">
 								<div class="footer-widget links-widget">
 									<h4 class="footer-title">Pages</h4>
 									<ul class="footer-list">
 										<li><a href="index.html">Home</a></li>
 										<li><a href="about.html">About Us</a></li>
-										<li><a href="services.html">Services</a></li>
+										<li><a href="services.html" class="service-link">Services</a></li>
 										<li><a href="projects.html">Projects</a></li>
 										<li><a href="contact.html">Contact</a></li>
 									</ul>
 								</div>
 							</div>
 
-							<!-- Column 3 -->
-							<div class="col-lg-4 col-md-12 col-sm-12">
+							<!-- Column 3: Services Links -->
+							<div class="col-lg-2 col-md-6 col-sm-12 mb-4">
+								<div class="footer-widget links-widget">
+									<h4 class="footer-title">Services</h4>
+									<ul class="footer-list">
+										<li><a href="services.html#service1">Service 1</a></li>
+										<li><a href="services.html#service2">Service 2</a></li>
+										<li><a href="services.html#service3">Service 3</a></li>
+										<li><a href="services.html#service4">Service 4</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- Column 4: Quick Contact + Social -->
+							<div class="col-lg-2 col-md-6 col-sm-12 mb-4">
 								<div class="footer-widget links-widget">
 									<h4 class="footer-title">Quick Contact</h4>
 
@@ -352,10 +377,9 @@
 										<!-- Phone -->
 										<a href="tel:+0001119999" class="footer-phone d-flex align-items-center">
 											<i class="fa-solid fa-phone contact-icon me-2"></i>
-											<span>000-111-9999</span>
+											<span>123-456-789</span>
 										</a>
 									</div>
-
 
 									<!-- Social Icons -->
 									<div class="footer-social_box mt-3">
@@ -374,7 +398,6 @@
 			</div>
 
 		</footer>
-
 		<!-- End Footer Style -->
 	</div>
 	<!-- End PageWrapper -->
@@ -419,7 +442,15 @@
 
 	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 	<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+<div class="fixed-cta-group">
+    <a href="https://wa.me/201159327538" class="cta-icon fs-2">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
+    <a href="tel:01159327538" class="cta-icon">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+</div>
 </body>
 
 </html>

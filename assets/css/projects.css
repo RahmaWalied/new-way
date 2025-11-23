@@ -596,8 +596,8 @@
 }
 
 .project-block_three-inner:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(240,194,123,0.6);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 10px rgba(240,194,123,0.6);
 }
 
 /* Project Image */
@@ -639,7 +639,6 @@
 .project-block_three-title {
   font-size: 1.2rem;
   font-weight: 700;
-  margin-bottom: 10px;
 }
 
 .more-project {
@@ -717,98 +716,103 @@
   color: #fff;
 }
 
-/* === Project Info Boxes === */
-.project-info {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+/* === Contact Form === */
+.project-detail-modern .service-contact-form {
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.info-box {
+.service-contact-form {
   background-color: #1c1c1c;
-  border-radius: 15px;
-  padding: 25px;
-  flex: 1 1 45%;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
 }
 
-.info-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(240, 194, 123, 0.3);
-}
-
-.info-box h4 {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: var(--main-color);
-}
-
-.info-box p {
-  font-size: 16px;
-  color:white;
-}
-
-/* === Project Description === */
-.project-description h3 {
-  font-size: 28px;
-  font-weight: 600;
-  color:var(--main-color);
-  margin-bottom: 20px;
-}
-
-.project-description p {
-  font-size: 15px;
-  line-height: 1.7;
+/* === Description === */
+.project-detail_title {
+  font-size: 32px;
+  font-weight: 700;
   color: white;
-  margin-bottom: 40px;
 }
 
-/* === Feature Grid === */
-.feature-grid {
-  gap: 10 px;
+.project-detail_description {
+  max-width: 750px;
+  margin: 0;     /* علشان يرجع للشمال */
+  line-height: 1.8;
+  color: white;
+  text-align: left;  /* ده يضمن إنه يبقى left */
 }
 
-.feature-item {
-  margin-bottom: 30px;
+
+/* === Buttons === */
+.project-buttons {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
-.feature-inner {
-  background-color: #1c1c1c;
-  border-radius: 15px;
-  height:160px;
-  padding: 25px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.feature-inner:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(240, 194, 123, 0.3);
-}
-
-.feature-inner h4 {
-  font-size: 18px;
+.project-buttons a {
+  padding: 14px 35px;
+  border-radius: 12px;
   font-weight: 600;
-  margin-bottom: 10px;
-  color:var(--main-color);
+  text-decoration: none;
+  color: #fff;
+  min-width: 160px;
+  text-align: center;
+  transition: 0.3s ease;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
 }
 
-.feature-inner p {
-  font-size: 14px;
-  color:white;
-  line-height: 1.6;
+/* زر الاتصال */
+.btn-call {
+  background: linear-gradient(135deg, #b3802c, #d49a41);
+  box-shadow: 0 5px 15px rgba(179, 128, 44, 0.3);
+}
+
+.btn-call:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(179, 128, 44, 0.45);
+}
+
+/* زر الواتساب */
+.btn-whatsapp {
+  background: linear-gradient(135deg, #d49a41, #b3802c);
+  box-shadow: 0 5px 15px rgba(212, 154, 65, 0.3);
+}
+
+.btn-whatsapp:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(212, 154, 65, 0.45);
+}
+
+/* تأثير الضوء */
+.project-buttons a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-20deg);
+  transition: 0.5s;
+}
+
+.project-buttons a:hover::before {
+  left: 100%;
 }
 
 /* === Responsive === */
-@media (max-width: 991px) {
-  .info-box {
-    flex: 1 1 100%;
+@media (max-width: 767px) {
+  .project-detail_title {
+    font-size: 26px;
   }
-  .overlay-text {
-    font-size: 14px;
-    padding: 15px;
+  .project-buttons a {
+    min-width: 130px;
+    padding: 12px 25px;
   }
 }
 

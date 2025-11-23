@@ -1,100 +1,145 @@
-/* === Contact One Section === */
+/* === Contact Section === */
 .contact-one {
-  background-color: #121212;
-  color: #f0f0f0;
-  padding: 80px 0;
-  font-family: 'Poppins', sans-serif;
+  position: relative;
+  padding: 100px 0;
+  color: #fff;
+  background-image: radial-gradient(circle at center, rgba(0,0,0,0.7), rgba(0,0,0,0.85)), url('../images/projects/s.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
+/* Section Title */
 .contact-one .sec-title {
+  position: relative;
+  z-index: 2;
+  text-align: center;
   margin-bottom: 60px;
 }
 
 .contact-one .sec-title_title {
-  font-size: 16px;
-  color: #b3802c;
-  font-weight: 600;
+  font-size: 40px;
+  font-weight: 900;
+  color:#b3802c;
   text-transform: uppercase;
   margin-bottom: 10px;
-  letter-spacing: 1px;
 }
 
 .contact-one .sec-title_heading {
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 22px;
+  font-weight: 500;
   color: #fff;
-  margin-bottom: 15px;
-}
-
-.contact-one .sec-title_text {
-  font-size: 15px;
-  color: white;
-  line-height: 1.7;
 }
 
 /* === Contact Form === */
 .contact-one .contact-form {
-  background-color: #1c1c1c;
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  position: relative;
+  z-index: 2;
 }
 
+.contact-one .contact-form form {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Input Fields */
 .contact-one .contact-form input,
 .contact-one .contact-form textarea {
-  width: 100%;
-  padding: 15px 20px;
-  border-radius: 10px;
-  background-color: #121212;
-  border: 1px solid #333;
-  color: #f0f0f0;
-  margin-bottom: 20px;
-  font-size: 14px;
+  flex: 1 1 48%;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+  font-size: 15px;
+  padding: 12px 15px;
+  transition: 0.3s;
+}
+
+.contact-one .contact-form textarea {
+  flex: 1 1 100%;
+  height: 160px;
+  resize: none;
+}
+
+.contact-one .contact-form input::placeholder,
+.contact-one .contact-form textarea::placeholder {
+  color: black;
 }
 
 .contact-one .contact-form input:focus,
 .contact-one .contact-form textarea:focus {
-  border-color: #b3802c;
-  outline: none;
+  border-color: #f3c775;
+  box-shadow: 0 0 15px rgba(243,199,117,0.5);
+  background: rgba(255,255,255,0.1);
 }
 
-.contact-one .theme-btn {
-  background: #b3802c;
-  color: #121212;
-  padding: 15px 30px;
-  font-weight: 600;
-  border-radius: 10px;
+/* Submit Button */
+.contact-one .contact-form button {
+  flex: 1 1 100%;
+  padding: 15px;
+  border-radius: 15px;
   border: none;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(45deg, #f3c775, #b3802c);
+  color: #121212;
   cursor: pointer;
   transition: 0.3s;
+  text-align: center;
 }
 
-.contact-one .theme-btn:hover {
-  background:   radial-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)),;
+.contact-one .contact-form button:hover {
+  box-shadow: 0 8px 25px rgba(243,199,117,0.6);
+  letter-spacing: 1px;
 }
 
-/* === Map One === */
-.contact-one .map-one {
-  border-radius: 20px;
-  overflow: hidden;
-  height: 100%;
-}
-
+/* Map Styling */
 .contact-one .map-one iframe {
   width: 100%;
-  height: 100%;
+  height: 560px;
+  border-radius: 20px;
   border: 0;
+  filter: grayscale(80%) contrast(120%) brightness(0.85);
+  transition: all 0.3s ease;
+}
+
+.contact-one .map-one iframe:hover {
+  filter: grayscale(0%) contrast(100%) brightness(1);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .contact-one .contact-form input,
+  .contact-one .contact-form textarea {
+    flex: 1 1 100%;
+  }
+  .contact-one .contact-form form {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .contact-one .sec-title_title {
+    font-size: 28px;
+  }
+  .contact-one .sec-title_heading {
+    font-size: 18px;
+  }
+  .contact-one .map-one iframe {
+    height: 350px;
+  }
 }
 
 /* === Infos One Section === */
 .infos-one {
-  background-image:radial-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),url('../images/breadcrumb.jpg'); /* حطي رابط صورتك */
-  background-size: cover;      /* تغطي كامل العنصر */
-  background-position: center; /* توضع في المنتصف */
-  background-repeat: no-repeat; /* تمنع التكرار */
-  background-attachment: fixed; /* الصورة ثابتة أثناء التمرير */
-  min-height:auto;           /* على الأقل طول الشاشة */
-  padding: 60px 0;
+ margin-top: 40px;
 }
 
 .info-block_one-inner {

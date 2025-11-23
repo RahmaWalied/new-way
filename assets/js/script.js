@@ -181,7 +181,16 @@
 		
 	}
 	
-	
+	// Open mobile menu
+document.querySelector(".mobile-nav-toggler").onclick = () => {
+    document.querySelector(".mobile-menu").classList.add("opened");
+};
+
+// Close menu
+document.querySelector(".mobile-menu .close-btn").onclick = () => {
+    document.querySelector(".mobile-menu").classList.remove("opened");
+};
+
 	
 	
 	

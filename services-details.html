@@ -8,7 +8,7 @@
 <link href="assets/css/style.css" rel="stylesheet">
 <link href="assets/css/meanmenu.min.css" rel="stylesheet">
 <link href="assets/css/responsive.css" rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
@@ -32,20 +32,22 @@
 <div class="page-wrapper">
 	
 	<!-- Cursor -->
-	<div class="cursor"></div>
-	<div class="cursor-follower"></div>
-	<!-- Cursor End -->
- 	
-	<!-- Preloader Start -->
-	<div class="preloader interior">
-	  <div class="preloader-content">
-		<img src="assets/images/section.gif" class="w-50"/>
-		<div class="preloader-text">New Way</div>
-		<div class="loading-bar"><span></span></div>
-	  </div>
-	</div>
-	<!-- Preloader End -->
-	
+		<!-- حركة الماوس -->
+		<div class="cursor"></div>
+		<div class="cursor-follower"></div>
+		<!-- Cursor End -->
+
+
+		<!-- Preloader Start -->
+		<div class="preloader interior">
+			<div class="preloader-content">
+				<img src="assets/images/section.gif" class="w-50" />
+				<div class="preloader-text">New Way</div>
+				<div class="loading-bar"><span></span></div>
+			</div>
+		</div>
+		<!-- Preloader End -->
+
 		<!-- Main Header -->
 		<header class="main-header header-style-three">
 			<!-- Header Lower -->
@@ -92,14 +94,14 @@
 							<!-- Main Menu End-->
 							<div class="outer-box d-flex align-items-center flex-wrap">
 								<!-- About Widget -->
-<span class="about-widget">
-    <span class="hamburger">
-        <span class="top-bun"></span>
-        <span class="meat"></span>
-        <span class="bottom-bun"></span>
-    </span>
-    <span class="lang-btn">Ar</span>
-</span>
+								<span class="about-widget">
+									<span class="hamburger">
+										<span class="top-bun"></span>
+										<span class="meat"></span>
+										<span class="bottom-bun"></span>
+									</span>
+									<span class="lang-btn">Ar</span>
+								</span>
 
 
 
@@ -130,7 +132,7 @@
 
 		</header>
 		<!-- End Main Header -->
-	
+
 		<!-- About Sidebar -->
 		<div class="about-sidebar">
 			<div class="gradient-layer"></div>
@@ -149,7 +151,7 @@
 
 				<!-- Description -->
 				<div class="sidebar-description">
-					<h3>About <span>Interior</span></h3>
+					<h31>About <span>Interior</span></h31>
 					<p>We create modern and elegant interior solutions with clean design and attention to every detail.
 					</p>
 				</div>
@@ -174,72 +176,125 @@
 			</div>
 		</div>
 		<!-- End About Sidebar -->
-
 	<!-- Page Title -->
     <section class="page-title" style="background-image:url(assets/images/breadcrumb2.jpg)">
         <div class="auto-container">
-			<h1>Project Detail</h1>
+			<h1>Services Detail</h1>
 			<ul class="bread-crumb clearfix">
 				<li><a href="index.html">Home</a></li>
-				<li>Project Detail</li>
+				<li>Services Detail</li>
 			</ul>
         </div>
     </section>
     <!-- End Page Title -->
 	
-	<!-- Project Detail -->
-<section class="project-detail-modern">
+	<!-- Sidebar Page Container -->
+<section class="service-detail-modern">
   <div class="auto-container">
 
-    <!-- Project Header -->
-    <div class="project-header row clearfix align-items-center">
-      <div class="col-lg-8 col-md-12">
-        <div class="project-img">
-          <img src="assets/images/projects/s.jpg" alt="Project Image" />
-          <div class="overlay-text">
-            <h2>Room Renovation</h2>
-            <p>Modern Interior for Elegant Spaces</p>
+    <div class="row align-items-start">
+
+      <!-- service image -->
+      <div class="col-lg-8 col-md-12 mb-4">
+        <div class="service-detail_image">
+          <a href="./assets/images/slider.jpg" data-fancybox="gallery">
+  <img
+    src="./assets/images/slider.jpg"
+    width="200"
+    height="150"
+    alt="Sample image #1"
+  />
+</a>
+<div style="display:none">
+  <a href="./assets/images/interior.jpg" data-fancybox="gallery">
+    <img
+      src="./assets/images/interior.jpg"
+      width="200"
+      height="150"
+      alt="Sample image #2"
+    />
+  </a>
+  <a href="./assets/images/slider2.jpg" data-fancybox="gallery">
+    <img
+      src="./assets/images/slider2.jpg"
+      width="200"
+      height="150"
+      alt="Sample image #3"
+    />
+  </a>
+</div>
+        </div>
+      </div>
+
+      <!-- form -->
+      <div class="col-lg-4 col-md-12 mb-4">
+        <aside class="sidebar">
+          <div class="service-contact-form p-4 rounded shadow-sm">
+            <div class="contact-inner">
+              <h3 class="mb-3">Get in Touch</h3>
+              <form action="#" method="post">
+                  <div class="mb-3">
+                      <input type="text" name="name" placeholder="Your Name" required class="form-control">
+                  </div>
+                  <div class="mb-3">
+                      <input type="email" name="email" placeholder="Your Email" required class="form-control">
+                  </div>
+                  <div class="mb-3">
+                      <input type="text" name="phone" placeholder="Phone" required class="form-control">
+                  </div>
+                  <div class="mb-3">
+                      <textarea name="message" placeholder="Your Message" rows="5" required class="form-control"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">
+                      Send Message
+                  </button>
+              </form>
+            </div>
           </div>
-        </div>
+        </aside>
       </div>
 
-      <div class="col-lg-4 col-md-12">
-        <div class="service-contact-form p-4 rounded shadow-sm">
-          <h3 class="mb-3 text-center">Get in Touch</h3>
-          <form action="#" method="post">
-            <div class="mb-3">
-              <input type="text" name="name" placeholder="Your Name" required class="form-control">
-            </div>
-            <div class="mb-3">
-              <input type="email" name="email" placeholder="Your Email" required class="form-control">
-            </div>
-            <div class="mb-3">
-              <input type="text" name="phone" placeholder="Phone" required class="form-control">
-            </div>
-            <div class="mb-3">
-              <textarea name="message" placeholder="Your Message" rows="5" required class="form-control"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">
-              Send Message
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
+   <!-- service title -->
+    <h1 class="service-detail_title text-center mb-3">Renovate Rooms As Your Demand</h1>
 
-    <!-- Description -->
-    <!-- project Title -->
-    <h2 class="project-detail_title mb-3">Renovate Rooms As Your Demand</h2>
-    <p class="project-detail_description mt-4 mb-5">
+   <!-- servise description -->
+    <p class="service-detail_description text-center mb-5">
       Interior designers make interior spaces functional, safe, and beautiful for almost every type of building. 
-      By determining space requirements and selecting essential and decorative items, such as colors, lighting, 
-      and materials, designers transform any space.
+      By determining space requirements and selecting essential and decorative items, such as colors, lighting, and materials, 
+      designers transform any space.
     </p>
 
-    <!-- Buttons at bottom -->
-    <div class="project-buttons">
+    </div>
+
+    <!-- buttons -->
+    <div class="project-buttons mb-5 justify-content-center text-center">
       <a href="tel:01159327538" class="btn-call">Call Now</a>
       <a href="https://wa.me/201159327538" target="_blank" class="btn-whatsapp">WhatsApp</a>
+    </div>
+
+    <!-- vedios -->
+    <div class="service-videos row justify-content-center g-4">
+
+      <div class="col-lg-6 col-md-12">
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID_1"
+            title="Video 1"
+            frameborder="0"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12">
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID_2"
+            title="Video 2"
+            frameborder="0"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+
     </div>
 
   </div>
@@ -247,9 +302,9 @@
 
 
 
-	<!-- End Project Detail -->
 
-	
+        </div>
+
 		<!-- Main Footer -->
 		<footer class="main-footer">
 			<div class="footer_pattern" style="background-image: url(assets/images/main-slider/pattern-1.png)"></div>
@@ -346,6 +401,7 @@
 
 		</footer>
 		<!-- End Footer Style -->
+
 <!-- End PageWrapper -->
 
 <div class="progress-wrap">
@@ -366,14 +422,13 @@
 <script src="assets/js/backtotop.js"></script>
 <script src="assets/js/odometer.js"></script>
 <script src="assets/js/parallax-scroll.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 <script src="assets/js/gsap.min.js"></script>
 <script src="assets/js/SplitText.min.js"></script>
 <script src="assets/js/ScrollTrigger.min.js"></script>
 <script src="assets/js/ScrollToPlugin.min.js"></script>
 <script src="assets/js/ScrollSmoother.min.js"></script>
 
-<script src="assets/js/mixitup.js"></script>
 <script src="assets/js/isotope.js"></script>
 <script src="assets/js/jquery.marquee.min.js"></script>
 <script src="assets/js/validate.js"></script>
@@ -386,8 +441,6 @@
 <script src="assets/js/color-settings.js"></script>
 <script src="assets/js/script.js"></script>
 
-<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 <div class="fixed-cta-group">
     <a href="https://wa.me/201159327538" class="cta-icon fs-2">
         <i class="fa-brands fa-whatsapp"></i>

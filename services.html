@@ -18,8 +18,8 @@
 <!-- Color Themes -->
 <link id="theme-color-file" href="assets/css/color-themes/default-color.css" rel="stylesheet">
 
-<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+<link rel="icon" href="assets/images/logo.png" type="image/x-icon">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -51,13 +51,13 @@
 			<!-- Header Lower -->
 			<div class="header-lower">
 				<div class="auto-container">
-					<div class="inner-container bg-black">
+					<div class="inner-container bg-transparent">
 						<div class="d-flex justify-content-between align-items-center">
 							<!-- Logo Box -->
 							<div class="logo-box">
 								<div class="logo">
 									<a href="index.html">
-										<img src="assets/images/logo.png" alt=""title="Interior">
+										<img src="assets/images/logo.png" alt="" title="Interior">
 									</a>
 								</div>
 							</div>
@@ -74,6 +74,7 @@
 											<span class="icon-bar"></span>
 											<span class="icon-bar"></span>
 										</button>
+
 									</div>
 
 									<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
@@ -91,13 +92,16 @@
 							<!-- Main Menu End-->
 							<div class="outer-box d-flex align-items-center flex-wrap">
 								<!-- About Widget -->
-								<span class="about-widget">
-									<span class="hamburger">
-										<span class="top-bun"></span>
-										<span class="meat"></span>
-										<span class="bottom-bun"></span>
-									</span>
-								</span>
+<span class="about-widget">
+    <span class="hamburger">
+        <span class="top-bun"></span>
+        <span class="meat"></span>
+        <span class="bottom-bun"></span>
+    </span>
+    <span class="lang-btn">Ar</span>
+</span>
+
+
 
 								<!-- Mobile Navigation Toggler -->
 								<div class="mobile-nav-toggler"><span class="icon flaticon-menu-1"></span></div>
@@ -118,7 +122,8 @@
 					<div class="nav-logo"><a href="index.html"><img src="assets/images/mobile-logo.png" alt=""
 								title=""></a></div>
 					<div class="menu-outer">
-						<!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+						<!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+					</div>
 				</nav>
 			</div>
 			<!-- End Mobile Menu -->
@@ -126,40 +131,49 @@
 		</header>
 		<!-- End Main Header -->
 	
-	<!-- About Sidebar -->
-	<div class="about-sidebar">
-		<div class="gradient-layer"></div>
-		<!-- Close Button -->
-		<div class="close-sidebar-widget close-button">
-			<span class="fa-solid fa-xmark fa-fw"></span>
-		</div>
-		<div class="sidebar-inner">
-			<div class="upper-box">
-				<div class="image">
-					<img src="assets/images/sidebaar.jpg" alt="" />
+		<!-- About Sidebar -->
+		<div class="about-sidebar">
+			<div class="gradient-layer"></div>
+
+			<!-- Close Button -->
+			<div class="close-sidebar-widget close-button">
+				<span class="fa-solid fa-xmark fa-fw"></span>
+			</div>
+
+			<div class="sidebar-inner">
+
+				<!-- Logo Section -->
+				<div class="sidebar-logo">
+					<img src="assets/images/logo.png" alt="Logo" />
 				</div>
-				<div class="content-box">
+
+				<!-- Description -->
+				<div class="sidebar-description">
 					<h3>About <span>Interior</span></h3>
-					<div class="text">Built and installed by skilled crafsmen who take Pride in their work and pay attention to the details</div>
-					<ul class="about-sidebar_list">
-						<li>Testimonials</li>
-						<li>Outsourcing</li>
-						<li>Privacy Policy</li>
-						<li>HR Training</li>
-						<li>Careers</li>
-					</ul>
+					<p>We create modern and elegant interior solutions with clean design and attention to every detail.
+					</p>
 				</div>
-			</div>
-			<!-- Social Box -->
-			<div class="social-box">
-				<a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-				<a href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
-				<a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-				<a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+
+				<!-- Links -->
+				<ul class="about-sidebar_list">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Our Services</a></li>
+					<li><a href="#">Testimonials</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Careers</a></li>
+				</ul>
+
+				<!-- Social Box -->
+				<div class="social-box">
+					<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+					<a href="#"><i class="fa-brands fa-youtube"></i></a>
+					<a href="#"><i class="fa-brands fa-instagram"></i></a>
+				</div>
+
 			</div>
 		</div>
-	</div>
-	<!-- End About Sidebar -->
+		<!-- End About Sidebar -->
 
 	<!-- Page Title -->
     <section class="page-title" style="background-image:url(assets/images/breadcrumb2.jpg)">
@@ -184,89 +198,102 @@
 				
 <div class="row clearfix">
 
-  <!-- Service 1 -->
-  <div class="service-card col-lg-4 col-md-6 col-sm-12">
-    <div class="service-card-inner">
-      <div class="service-card-img">
+<!-- Service 1 -->
+<div class="service-card col-lg-4 col-md-6 col-sm-12">
+  <div class="service-card-inner">
+    <div class="service-card-img">
+      <a href="services-details.html">
         <img src="assets/images/interior.jpg" alt="Interior Design" />
-		<div class="service-card-overlay"></div>
-      </div>
-      <div class="service-card-content">
-        <h4 class="service-card-title">Interior Design</h4>
-        <p class="service-card-text">Creative interior solutions that make your space shine and feel elegant.</p>
-      </div>
+        <div class="service-card-overlay"></div>
+      </a>
+    </div>
+    <div class="service-card-content">
+      <h4 class="service-card-title">Interior Design</h4>
+      <p class="service-card-text">Creative interior solutions that make your space shine and feel elegant.</p>
     </div>
   </div>
+</div>
 
-  <!-- Service 2 -->
-  <div class="service-card col-lg-4 col-md-6 col-sm-12">
-    <div class="service-card-inner">
-      <div class="service-card-img">
+<!-- Service 2 -->
+<div class="service-card col-lg-4 col-md-6 col-sm-12">
+  <div class="service-card-inner">
+    <div class="service-card-img">
+        <a href="services-details.html">
         <img src="assets/images/archeticure.jpeg" alt="Archicture Planning" />
-		<div class="service-card-overlay"></div>
-      </div>
-      <div class="service-card-content">
-        <h4 class="service-card-title">Archicture Planning</h4>
-        <p class="service-card-text">Professional planning to make your projects accurate and cost-effective.</p>
-      </div>
+        <div class="service-card-overlay"></div>
+      </a>
+    </div>
+    <div class="service-card-content">
+      <h4 class="service-card-title">Archicture Planning</h4>
+      <p class="service-card-text">Professional planning to make your projects accurate and cost-effective.</p>
     </div>
   </div>
+</div>
 
-  <!-- Service 3 -->
-  <div class="service-card col-lg-4 col-md-6 col-sm-12">
-    <div class="service-card-inner">
-      <div class="service-card-img">
+<!-- Service 3 -->
+<div class="service-card col-lg-4 col-md-6 col-sm-12">
+  <div class="service-card-inner">
+    <div class="service-card-img">
+        <a href="services-details.html">
         <img src="assets/images/project.jpg" alt="Project Financing" />
-		<div class="service-card-overlay"></div>
-      </div>
-      <div class="service-card-content">
-        <h4 class="service-card-title">Project Financing</h4>
-        <p class="service-card-text">Smart financing solutions to complete your projects efficiently.</p>
-      </div>
+        <div class="service-card-overlay"></div>
+      </a>
+    </div>
+    <div class="service-card-content">
+      <h4 class="service-card-title">Project Financing</h4>
+      <p class="service-card-text">Smart financing solutions to complete your projects efficiently.</p>
     </div>
   </div>
+</div>
 
-  <!-- Service 4 -->
-  <div class="service-card col-lg-4 col-md-6 col-sm-12">
-    <div class="service-card-inner">
-      <div class="service-card-img">
+<!-- Service 4 -->
+<div class="service-card col-lg-4 col-md-6 col-sm-12">
+  <div class="service-card-inner">
+    <div class="service-card-img">
+        <a href="services-details.html">
         <img src="assets/images/reatel.avif" alt="Retail Design" />
-		<div class="service-card-overlay"></div>
-      </div>
-      <div class="service-card-content">
-        <h4 class="service-card-title">Retail Design</h4>
-        <p class="service-card-text">Design retail spaces that attract customers and enhance brand experience.</p>
-      </div>
+        <div class="service-card-overlay"></div>
+      </a>
+    </div>
+    <div class="service-card-content">
+      <h4 class="service-card-title">Retail Design</h4>
+      <p class="service-card-text">Design retail spaces that attract customers and enhance brand experience.</p>
     </div>
   </div>
+</div>
 
-  <!-- Service 5 -->
-  <div class="service-card col-lg-4 col-md-6 col-sm-12">
-    <div class="service-card-inner">
-      <div class="service-card-img">
+<!-- Service 5 -->
+<div class="service-card col-lg-4 col-md-6 col-sm-12">
+  <div class="service-card-inner">
+    <div class="service-card-img">
+        <a href="services-details.html">
         <img src="assets/images/renovate.webp" alt="Renovate Rooms" />
-		<div class="service-card-overlay"></div>
-      </div>
-      <div class="service-card-content">
-        <h4 class="service-card-title">Renovate Rooms</h4>
-        <p class="service-card-text">Modern renovations that give your rooms a fresh and elegant look.</p>
-      </div>
+        <div class="service-card-overlay"></div>
+      </a>
+    </div>
+    <div class="service-card-content">
+      <h4 class="service-card-title">Renovate Rooms</h4>
+      <p class="service-card-text">Modern renovations that give your rooms a fresh and elegant look.</p>
     </div>
   </div>
+</div>
 
-  <!-- Service 6 -->
-  <div class="service-card col-lg-4 col-md-6 col-sm-12">
-    <div class="service-card-inner">
-      <div class="service-card-img">
+<!-- Service 6 -->
+<div class="service-card col-lg-4 col-md-6 col-sm-12">
+  <div class="service-card-inner">
+    <div class="service-card-img">
+        <a href="services-details.html">
         <img src="assets/images/residential.jpg" alt="Residential Interior" />
         <div class="service-card-overlay"></div>
-      </div>
-      <div class="service-card-content">
-        <h4 class="service-card-title">Residential Interior</h4>
-        <p class="service-card-text">Beautiful interior solutions for homes that combine comfort with elegance.</p>
-      </div>
+      </a>
+    </div>
+    <div class="service-card-content">
+      <h4 class="service-card-title">Residential Interior</h4>
+      <p class="service-card-text">Beautiful interior solutions for homes that combine comfort with elegance.</p>
     </div>
   </div>
+</div>
+
 
 </div>
 
@@ -277,91 +304,102 @@
 	<!-- End Services Four -->
 
 	
-	<!-- Main Footer -->
-<footer class="main-footer">
-  <div class="footer_pattern" style="background-image: url(assets/images/main-slider/pattern-1.png)"></div>
+		<!-- Main Footer -->
+		<footer class="main-footer">
+			<div class="footer_pattern" style="background-image: url(assets/images/main-slider/pattern-1.png)"></div>
 
-  <div class="auto-container">
-    <div class="inner-container">
+			<div class="auto-container">
+				<div class="inner-container">
 
-      <div class="widgets-section">
-        <div class="row clearfix">
+					<div class="widgets-section">
+						<div class="row clearfix">
 
-          <!-- Column 1 -->
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="footer-widget footer-two_logo-widget">
-              <div class="footer-logo mb-3">
-                <a href="index.html">
-                  <img src="assets/images/logo.png" alt="">
-                </a>
-              </div>
-              <div class="footer-text">
-                to take a trivial example, which of us ever undertakes laborious 
-                physical exercise, except some advantage from it right.
-              </div>
-            </div>
-          </div>
+							<!-- Column 1: Logo + Text -->
+							<div class="col-lg-6 col-md-12 col-sm-12 mb-4">
+								<div class="footer-widget footer-two_logo-widget">
+									<div class="footer-logo mb-3">
+										<a href="index.html">
+											<img src="assets/images/logo.png" alt="">
+										</a>
+									</div>
+									<div class="footer-text">
+										to take a trivial example, which of us ever undertakes laborious
+										physical exercise, except some advantage from it right.
+									</div>
+								</div>
+							</div>
 
-          <!-- Column 2 -->
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="footer-widget links-widget">
-              <h4 class="footer-title">Pages</h4>
-              <ul class="footer-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </div>
-          </div>
+							<!-- Column 2: Pages -->
+							<div class="col-lg-2 col-md-6 col-sm-12 mb-4">
+								<div class="footer-widget links-widget">
+									<h4 class="footer-title">Pages</h4>
+									<ul class="footer-list">
+										<li><a href="index.html">Home</a></li>
+										<li><a href="about.html">About Us</a></li>
+										<li><a href="services.html" class="service-link">Services</a></li>
+										<li><a href="projects.html">Projects</a></li>
+										<li><a href="contact.html">Contact</a></li>
+									</ul>
+								</div>
+							</div>
 
-          <!-- Column 3 -->
-          <div class="col-lg-4 col-md-12 col-sm-12">
-            <div class="footer-widget links-widget">
-              <h4 class="footer-title">Quick Contact</h4>
+							<!-- Column 3: Services Links -->
+							<div class="col-lg-2 col-md-6 col-sm-12 mb-4">
+								<div class="footer-widget links-widget">
+									<h4 class="footer-title">Services</h4>
+									<ul class="footer-list">
+										<li><a href="services.html#service1">Service 1</a></li>
+										<li><a href="services.html#service2">Service 2</a></li>
+										<li><a href="services.html#service3">Service 3</a></li>
+										<li><a href="services.html#service4">Service 4</a></li>
+									</ul>
+								</div>
+							</div>
 
-    <div class="footer-contact">
-  <!-- Location -->
-  <div class="footer-location d-flex align-items-start mb-3 text-white">
-    <i class="fa-solid fa-location-dot contact-icon me-2 mt-1"></i>
-    <div>
-      203 Madison Ave, NY, USA
-    </div>
-  </div>
+							<!-- Column 4: Quick Contact + Social -->
+							<div class="col-lg-2 col-md-6 col-sm-12 mb-4">
+								<div class="footer-widget links-widget">
+									<h4 class="footer-title">Quick Contact</h4>
 
-  <!-- Text -->
-  <p class="footer-text mb-3">
-    If you have any questions or need help, feel free to contact our team.
-  </p>
+									<div class="footer-contact">
+										<!-- Location -->
+										<div class="footer-location d-flex align-items-start mb-3 text-white">
+											<i class="fa-solid fa-location-dot contact-icon me-2 mt-1"></i>
+											<div>
+												203 Madison Ave, NY, USA
+											</div>
+										</div>
 
-  <!-- Phone -->
-  <a href="tel:+0001119999" class="footer-phone d-flex align-items-center">
-    <i class="fa-solid fa-phone contact-icon me-2"></i>
-    <span>000-111-9999</span>
-  </a>
-</div>
+										<!-- Text -->
+										<p class="footer-text mb-3">
+											If you have any questions or need help, feel free to contact our team.
+										</p>
 
+										<!-- Phone -->
+										<a href="tel:+0001119999" class="footer-phone d-flex align-items-center">
+											<i class="fa-solid fa-phone contact-icon me-2"></i>
+											<span>123-456-789</span>
+										</a>
+									</div>
 
-              <!-- Social Icons -->
-              <div class="footer-social_box mt-3">
-                <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
-                <a href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-              </div>
-            </div>
-          </div>
+									<!-- Social Icons -->
+									<div class="footer-social_box mt-3">
+										<a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+										<a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+										<a href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+										<a href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+									</div>
+								</div>
+							</div>
 
-        </div><!-- row -->
-      </div><!-- widgets-section -->
+						</div><!-- row -->
+					</div><!-- widgets-section -->
 
-    </div>
-  </div>
+				</div>
+			</div>
 
-</footer>
-
-	<!-- End Footer Style -->
+		</footer>
+		<!-- End Footer Style -->
 <!-- End PageWrapper -->
 
 <div class="progress-wrap">
@@ -400,7 +438,15 @@
 <script src="assets/js/element-in-view.js"></script>
 <script src="assets/js/color-settings.js"></script>
 <script src="assets/js/script.js"></script>
+<div class="fixed-cta-group">
+    <a href="https://wa.me/201159327538" class="cta-icon fs-2">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
+    <a href="tel:01159327538" class="cta-icon">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+</div>
 
 </body>
 </html>

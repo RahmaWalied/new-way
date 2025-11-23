@@ -267,6 +267,68 @@
 	gap: 35px;
 }
 
+/* ------------------------------
+  Vision & Mission Dark Mode
+------------------------------ */
+.vision, .mission {
+  background-color:black;
+  color: #eee;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.vision .header-section h2,
+.mission .header-section h2 {
+  color:var(--main-color);
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.vision .header-section h3,
+.mission .header-section h3 {
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.vision p, .mission p,
+.vision ul li, .mission ul li {
+  color: #ccc;
+  font-size: 16px;
+}
+
+.vision ul li i,
+.mission ul li i {
+  color:var(--main-color); /* لون أيقونات الـ check */
+font-size: 20px;
+margin-top: 4px;
+}
+
+/* Image Effects */
+.about-image {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.4s ease;
+}
+
+
+
+.about-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.about-image:hover img {
+  transform: scale(1.05);
+}
+
+.about-image:hover::after {
+  background: rgba(0,0,0,0.1);
+}
 
 /* ========================
    Managers Section - Dark Elegant
@@ -288,91 +350,107 @@
 }
 
 /* Manager Card */
-.manager-card {
-  background: #111;
-  border-radius: 18px;
-  padding: 30px 25px;
-  border: 1px solid rgba(179, 128, 44, 0.4);
-  text-align: center;
-  transition: .4s ease;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(179,128,44,0.05);
+.team-one{
+	position: relative;
+	padding: 110px 0px 80px;
 }
 
-/* Hover Glow */
-.manager-card:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 0 35px rgba(179,128,44,0.2);
-  border-color: #e2cba8;
+.team-block_one{
+	position:relative;
+	margin-bottom:30px;
 }
 
-/* Manager Image */
-.manager-img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: 0 auto 20px;
-  border: 3px solid #b3802c;
-  transition: .4s;
+.team-block_one-inner{
+	position:relative;
+	padding:20px 20px 45px;
+	border-radius:50px 50px 50px;
+	background-color:#f5f5f5;
 }
 
-.manager-card:hover .manager-img {
-  border-color: #e2cba8;
+.team-block_one-image{
+	position:relative;
+	text-align:center;
+	overflow:hidden;
 }
 
-.manager-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: .4s ease;
+.team-block_one-image img{
+	position:relative;
+	width:100%;
+	display:block;
+	overflow:hidden;
+	border-radius:150px 50px 20px 200px;
 }
 
-.manager-card:hover .manager-img img {
-  transform: scale(1.1);
+.team-block_one-content{
+	position:relative;
+	text-align:center;
 }
 
-/* Text */
-.manager-name {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 6px;
-  color: #fff;
+.team-block_one-heading{
+	position:relative;
+	padding-top:25px;
+	margin-bottom:0px;
+	text-transform: uppercase;
 }
 
-.manager-position {
-  font-size: 18px;
-  color: #b3802c;
-  font-weight: 600;
-  margin-bottom: 12px;
+.team-block_one-heading a{
+	position:relative;
+	color:var(--color-two);
 }
 
-.manager-text {
-  font-size: 14px;
-  color: #ccc;
-  margin-bottom: 18px;
-  line-height: 1.6;
+.team-block_one-heading a:hover{
+	color:var(--main-color);
 }
 
-/* Social Icons */
-.manager-social a {
-  display: inline-flex;
-  width: 36px;
-  height: 36px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  border: 1px solid #b3802c;
-  color: #b3802c;
-  transition: .3s ease;
-  font-size: 16px;
-  margin: 0 6px;
+.team-block_one-designation{
+	position:relative;
+	font-size:16px;
+	font-weight:700;
+	margin-top:10px;
+	color:var(--main-color);
+	text-transform: uppercase;
 }
 
-.manager-social a:hover {
-  background: #b3802c;
-  color: #000;
-  transform: scale(1.1);
+.team-block_one-socials{
+	position:absolute;
+	right:0px;
+	opacity:0;
+	bottom:0px;
+	width:200px;
+	transform: translate(100px,100px);
+	-webkit-transition:all 500ms ease;
+	-moz-transition:all 500ms ease;
+	-ms-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+}
+
+.team-block_one-inner:hover .team-block_one-socials{
+	bottom:0px;
+	opacity:1;
+	transform: translate(0px,0px);
+}
+
+.team-block_one-socials a{
+	position:relative;
+	width:40px;
+	height:40px;
+	display:block;
+	margin:0 auto 8px;
+	font-weight:700;
+	line-height: 40px;
+	border-radius:50px;
+	color:var(--white-color);
+	font-family: 'Font Awesome 6 Free';
+	background-color: rgba(var(--main-color-rgb), 1);
+}
+.team-block_one-socials span{
+	position:relative;
+	margin:5px 0px;
+}
+
+.team-block_one-socials a:hover{
+	color:var(--white-color);
+	background-color: rgba(var(--main-color-rgb), 1);
 }
 

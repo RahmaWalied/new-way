@@ -23,61 +23,6 @@
 	background-repeat: no-repeat;
 }
 
-.slider-one-arrow{
-	position: absolute;
-	left:0px;
-	bottom:0px;
-	right: 0px;
-	text-align: center;
-}
-
-.slider-one:hover .slider-one-arrow{
-	opacity: 1;
-}
-
-.slider-one .main-slider-prev{
-	position: relative;
-	z-index: 1;
-	width: 73px;
-	height: 72px;
-	font-size: 24px;
-	cursor: pointer;
-	line-height: 72px;
-	text-align: center;
-	display: inline-block;
-	color: var(--white-color);
-	background-color:var(--main-color);
-}
-
-.slider-one .main-slider-prev:hover{
-	color: var(--main-color);
-	background-color: var(--white-color);
-}
-
-.slider-one .main-slider-next:hover{
-	color: var(--main-color);
-	background-color: var(--white-color);
-}
-
-.slider-one .main-slider-next::after,
-.slider-one .main-slider-prev::after{
-	display: none;
-}
-
-.slider-one .main-slider-next{
-	position: relative;
-	z-index: 1;
-	width: 73px;
-	height: 72px;
-	font-size: 24px;
-	cursor: pointer;
-	line-height: 72px;
-	text-align: center;
-	display: inline-block;
-	color: var(--white-color);
-	background-color:var(--main-color);
-}
-
 .slider-one .swiper-slide{
 	position:relative;
 	padding:350px 0px 220px;
@@ -670,7 +615,7 @@
 }
 
 .slider-three_heading{
-	font-size: 214px;
+	font-size: 195px;
 	line-height:180px;
 	letter-spacing: 2px;
 	color: var(--white-color);
