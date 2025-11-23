@@ -270,16 +270,18 @@
 /* ------------------------------
   Vision & Mission Dark Mode
 ------------------------------ */
+/* Sections */
 .vision, .mission {
-  background-color:black;
+  background-color: black;
   color: #eee;
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
+/* Headers */
 .vision .header-section h2,
 .mission .header-section h2 {
-  color:var(--main-color);
+  color: var(--main-color);
   font-size: 36px;
   margin-bottom: 10px;
 }
@@ -291,43 +293,64 @@
   margin-bottom: 20px;
 }
 
+/* Paragraphs and Lists */
 .vision p, .mission p,
 .vision ul li, .mission ul li {
   color: #ccc;
   font-size: 16px;
 }
 
+/* Check icons */
 .vision ul li i,
 .mission ul li i {
-  color:var(--main-color); /* لون أيقونات الـ check */
-font-size: 20px;
-margin-top: 4px;
+  color: var(--main-color);
+  font-size: 20px;
+  margin-top: 4px;
 }
 
-/* Image Effects */
+/* Image Container */
 .about-image {
   border-radius: 15px;
   overflow: hidden;
   position: relative;
   transition: transform 0.4s ease;
+  height: 100%; /* الصورة تاخد طول العمود */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-
 
 .about-image img {
   display: block;
-  width: 100%;
-  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%; /* يخلي الصورة ما تتعداش طول النص */
   object-fit: cover;
   transition: transform 0.4s ease;
+  border-radius: 20px;
 }
 
 .about-image:hover img {
   transform: scale(1.05);
+  border-radius: 20px;
 }
 
 .about-image:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0,0,0,0.1);
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 992px) {
+  .about-image img {
+    max-width: 90%;
+    max-height: none;
+  }
 }
 
 /* ========================
