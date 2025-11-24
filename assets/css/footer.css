@@ -1,9 +1,16 @@
 .main-footer {
   position: relative;
+  background-image: 
+    linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), /* الشادو من فوق */
+    url('../images/background/pattern-2.png'); /* صورة الـ pattern */
+  background-size: cover;       /* يغطي كامل الفوتر */
+  background-repeat: no-repeat; /* لا يتكرر */
+  background-position: center; /* ناحية اليسار */
   color: #fff;
-  padding: 60px 20px;
   overflow: hidden;
+  height: 350px;
 }
+
 
 .main-footer .inner-container {
   position: relative;
@@ -51,20 +58,23 @@
 
 .contact-info {
   font-size: 15px; /* أصغر */
-  margin: 2px 0 0 0;
+  margin: 1px 0 0 0;
   color: #f0f0f0;
 }
 
+/* التأكد أن الروابط يمكن تحريكها */
 .footer-social a {
-  margin-right: 15px;
-  color: #fff;
-  transition: transform 0.3s, color 0.3s;
+  display: inline-block;         /* ضروري للـ transform */
+  transition: all 0.3s ease;     /* حركة سلسة عند hover */
+  color:white;                    /* اللون الافتراضي */
 }
 
+/* Hover effect */
 .footer-social a:hover {
-  color:var(--main-color);
-  transform: scale(1.2);
+  color: #b3802c;       /* لون عند المرور */
+  transform: scale(1.2);          /* تكبير الأيقونة */
 }
+
 .widgets-section {
   display: flex;
   justify-content: space-between; 
