@@ -1,240 +1,193 @@
 /*** 
-
 ====================================================================
-	Slider Three
+    Slider Three
 ====================================================================
-
 ***/
 
 .slider-three{
-	position:relative;
+    position:relative;
 }
 
 .slider-three-arrow{
-	position: absolute;
-	left:0px;
-	bottom:0px;
-	right: 0px;
+    position: absolute;
+    left:0px;
+    bottom:0px;
+    right: 0px;
 }
 
 .slider-three .swiper-slide{
-	position:relative;
-	padding:280px 0px 200px;
+    position:relative;
+    padding:180px 0 180px; /* ↓↓↓ تم زيادة المسافة تحت ↓↓↓ */
 }
 
 .slider-three_content{
-	position:relative;
-	z-index:2;
-	margin:0 auto;
-	max-width: 740px;
-	text-align: right;
+    position:relative;
+    z-index:2;
+    margin:0 auto;
+    max-width: 740px;
+    text-align: right;
 }
 
 .slider-three_content:before{
-	position:absolute;
-	content:'';
-	right:-100px;
-	top:-50px;
-	bottom:-60px;
-	width: 250px;
-	border:10px solid rgba(var(--white-color-rgb), 0.20);
+    position:absolute;
+    content:'';
+    right:-60px;   /* ↓↓↓ تصغير البوكس ↓↓↓ */
+    top:-30px;
+    bottom:-40px;
+    width: 180px;
+    border:10px solid rgba(var(--white-color-rgb), 0.20);
 }
 
 .slider-three_content-inner{
-	position:relative;
-	max-width: 100%;
+    position:relative;
+    max-width: 100%;
     margin-bottom: 20px;
 }
 
 .slider-three_image-layer{
-	background-size: cover;
+    background-size: cover;
 }
 
 .slider-three_image-layer:before{
-	position:absolute;
-	content:'';
-	left:0px;
-	top:0px;
-	right:0px;
-	bottom:0px;
-	opacity:0.70;
-	background-color: var(--color-two);
+    position:absolute;
+    content:'';
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    opacity:0.70;
+    background-color: var(--color-two);
 }
 
 .slider-three_title{
-	position: absolute;
-	right:0px;
-	bottom:0px;
-	opacity:0;
-	font-size: 34px;
-	font-weight: 500;
-	line-height:1em;
-	display:inline-block;
-	color: var(--white-color);
-	text-transform: capitalize;
-	transform: rotate(90deg);
-	transform-origin: 112% 0%;
-	font-family: "Barlow Condensed", sans-serif;
-	transition: 1.3s cubic-bezier(0.5, 0.5, 0, 1);
+    position: absolute;
+    right:12px;
+    bottom:-105px;
+    opacity:0;
+    font-size: 28px;
+    font-weight: 500;
+    line-height:1em;
+    display:inline-block;
+    color: var(--white-color);
+    text-transform: capitalize;
+    transform: rotate(90deg);
+    transform-origin: 112% 0%;
+    transition: 1.3s cubic-bezier(0.5, 0.5, 0, 1);
     clip-path: polygon(0 0, 100% 0, 100% 16%, 0 16%);
 }
 
 .slider-three .swiper-slide-active .slider-three_title{
-	opacity:1;
-	-webkit-transition-delay: 500ms;
-	-moz-transition-delay: 500ms;
-	-ms-transition-delay: 500ms;
-	-o-transition-delay: 500ms;
-	transition-delay: 500ms;
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    opacity:1;
+    transition-delay: 500ms;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .slider-three_heading{
-	font-size: 195px;
-	line-height:180px;
-	letter-spacing: 2px;
-	color: var(--white-color);
-	text-transform: uppercase;
-	
-	transition: 1.3s cubic-bezier(0.5, 0.5, 0, 1);
+    font-size: 195px;
+    line-height:180px;
+    letter-spacing: 2px;
+    margin-bottom: 10px; /* ↓↓↓ تقليل المسافة تحت ↓↓↓ */
+    color: var(--white-color);
+    text-transform: uppercase;
+    transition: 1.3s cubic-bezier(0.5, 0.5, 0, 1);
     clip-path: polygon(0 0, 100% 0, 100% 16%, 0 16%);
 }
 
 .slider-three_heading span{
-	color: var(--main-color);
+    color: var(--main-color);
 }
 
 .slider-three .swiper-slide-active .slider-three_heading{
-	transition-delay: 800ms;
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition-delay: 800ms;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .slider-three_text{
-	font-weight:400;
-	font-size:18px;
-	line-height:34px;
-	margin-bottom:50px;
-	color: var(--white-color);
-	text-transform: capitalize;
-	
-	transition: 1.3s cubic-bezier(0.5, 0.5, 0, 1);
+    font-weight:400;
+    font-size:18px;
+    line-height:34px;
+    margin-bottom:60px; /* ↓↓↓ تعديل مهم ↓↓↓ */
+    color: var(--white-color);
+    text-transform: capitalize;
+    transition: 1.3s cubic-bezier(0.5, 0.5, 0, 1);
     clip-path: polygon(0 0, 100% 0, 100% 16%, 0 16%);
 }
 
 .slider-three .swiper-slide-active .slider-three_text{
-	transition-delay: 1200ms;
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition-delay: 1200ms;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .slider-three .slider-three_button{
-	position: relative;
-	opacity:0;
-	display:inline-block;
-	transition: 1.3s cubic-bezier(0.5, 0.5, 0, 1);
+    position: relative;
+    opacity:0;
+    display:inline-block;
+    transition: 1.3s cubic-bezier(0.5, 0.5, 0, 1);
     clip-path: polygon(0 0, 100% 0, 100% 16%, 0 16%);
 }
 
 .slider-three .swiper-slide-active .slider-three_button{
-	opacity:1;
-	-webkit-transition-delay: 1600ms;
-	-moz-transition-delay: 1600ms;
-	-ms-transition-delay: 1600ms;
-	-o-transition-delay: 1600ms;
-	transition-delay: 1600ms;
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    opacity:1;
+    transition-delay: 1600ms;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .slider-three .mouse-btn-down{
-	position:absolute;
-	left:50%;
-	margin-left:-20px;
-	bottom:20px;
-	width:30px;
-	height:68px;
-	cursor:pointer;
-	display:block;
-	z-index:20;
-	cursor:pointer;
-}
-
-.slider-three .mouse-btn-down {
-    -webkit-animation: mover 1s infinite  alternate;
-    animation: mover 1s infinite  alternate;
-}
-
-.slider-three .mouse-btn-down {
-    -webkit-animation: mover 1s infinite  alternate;
-    animation: mover 1s infinite  alternate;
-}
-@-webkit-keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
-}
-@keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
+    position:absolute;
+    left:50%;
+    bottom:50px; /* ↑↑↑ إبعاد الشيفرون عن الديف ↑↑↑ */
+    width:30px;
+    height:68px;
+    cursor:pointer;
+    display:block;
+    z-index:20;
+    transform: translateX(-50%);
+    animation: mover 1s infinite alternate;
 }
 
 /* Chevron */
-
 .chevron {
-	position: absolute;
-	width: 35px;
-	height: 8px;
-	opacity: 0;
-	transform: scale3d(0.5, 0.5, 0.5);
-	animation: move 3s ease-out infinite;
+    position: absolute;
+    width: 35px;
+    height: 8px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
 }
 
-.chevron:first-child {
-	animation: move 3s ease-out 1s infinite;
-}
-
-.chevron:nth-child(2) {
-	animation: move 3s ease-out 2s infinite;
-}
+.chevron:first-child { animation-delay: 1s; }
+.chevron:nth-child(2) { animation-delay: 2s; }
 
 .chevron:before,
 .chevron:after {
-	position: absolute;
-	content: '';
-	top: 0;
-	width: 51%;
-	height: 100%;
-	background: var(--white-color);
+    position: absolute;
+    content: '';
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: var(--white-color);
 }
 
 .chevron:before {
-	left: 0;
-	transform: skew(0deg, 30deg);
+    left: 0;
+    transform: skew(0deg, 30deg);
 }
 
 .chevron:after {
-	right: 0;
-	width: 50%;
-	transform: skew(0deg, -30deg);
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg);
+}
+
+/* Animations */
+@keyframes mover {
+    0% { transform: translateX(-50%) translateY(0); }
+    100% { transform: translateX(-50%) translateY(-10px); }
 }
 
 @keyframes move {
-  25% {
-    opacity: 1;
-  }
-  33% {
-    opacity: 1;
-    transform: translateY(30px);
-  }
-  67% {
-    opacity: 1;
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
-  }
-}
-
-@keyframes pulse {
-  to {
-    opacity: 1;
-  }
+    25% { opacity: 1; }
+    33% { opacity: 1; transform: translateY(30px); }
+    67% { opacity: 1; transform: translateY(40px); }
+    100% { opacity: 0; transform: translateY(55px) scale3d(0.5, 0.5, 0.5); }
 }
