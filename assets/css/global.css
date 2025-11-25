@@ -94,7 +94,6 @@
 	--black-color-rgb:0,0,0;
 
 }
-
 /*** 
 
 ====================================================================
@@ -131,12 +130,14 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background-color: var(--main-color);
+    background: linear-gradient(45deg, #f3c775, #b3802c);
+    border-radius: 10px; /* Optional: rounded corners */
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--color-three);
+    background: linear-gradient(45deg, #f3c775, #b3802c);
+    filter: brightness(1.2); /* Slightly brighter on hover */
 }
 
 body {
@@ -195,12 +196,19 @@ body {
 }
 
 .preloader-text {
-  font-size: 18px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  opacity: 0;
-  color: var(--main-color);
+    font-size: 22px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    opacity: 0;
+    font-weight: 700;
+
+    /* Gradient Text */
+    background: linear-gradient(45deg, #f3c775, #b3802c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
+
 
 .loading-bar {
   position: relative;
@@ -213,14 +221,22 @@ body {
 }
 
 .loading-bar span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  background: linear-gradient(90deg, #b3802c, #b3802c);
-  animation: loadingBar 2s ease-in-out infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+
+    /* Gradient Animated */
+    background: linear-gradient(90deg, #f3c775, #b3802c);
+    
+    /* Optional Glassy Shine */
+    box-shadow: 0 0 6px rgba(243,199,117,0.6),
+                0 0 12px rgba(179,128,44,0.5);
+
+    animation: loadingBar 2s ease-in-out infinite;
 }
+
 
 @keyframes loadingBar {
   0% { width: 0; }
@@ -481,7 +497,10 @@ img{
 }
 
 .list-style-one li a:hover{
-	color:var(--main-color);
+	    /* Gradient */
+    background: linear-gradient(45deg, #f3c775, #b3802c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .list-style-one li .icon{
@@ -512,7 +531,7 @@ img{
 	padding:6px 6px 6px 30px;
     color: var(--white-color);
 	text-transform: uppercase;
-	background-color: var(--main-color);
+	background:linear-gradient(45deg, #f3c775, #b3802c);
 }
 
 .btn-style-one:before{
@@ -866,7 +885,14 @@ img{
 	gap:18px;
 	letter-spacing:1px;
 	align-items:center;
-	color:var(--main-color);
+	 background: linear-gradient(45deg, #f3c775, #b3802c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Glassy Golden Shine */
+    text-shadow:
+        0px 0px 6px rgba(243,199,117,0.6),   /* لمعة دهبي */
+        0px 0px 12px rgba(179,128,44,0.5),
 	text-transform:uppercase;
 }
 
@@ -1399,7 +1425,7 @@ img{
 .cta-icon {
     width: 48px;
     height: 48px;
-    background:var(--main-color); /* غيري اللون لو عايزة */
+    background:linear-gradient(45deg, #f3c775, #b3802c); /* غيري اللون لو عايزة */
     color: #fff;
     border-radius: 50%;
     display: flex;

@@ -43,11 +43,20 @@
 }
 
 .footer-contact .contact-icon {
-  font-size: 22px;
-  margin-right: 12px;
-  color:var(--main-color);
+    font-size: 22px;
+    margin-right: 12px;
+  margin-top: 18px;
+    /* Gradient */
+    background: linear-gradient(45deg, #f3c775, #b3802c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease; 
+    cursor: pointer;
 }
 
+.footer-contact .contact-icon:hover{
+      transform: scale(1.2);
+}
 .contact-title {
   font-size: 22px; /* أكبر من النص */
   font-weight: 600;
@@ -70,8 +79,11 @@
 
 /* Hover effect */
 .footer-social a:hover {
-  color: #b3802c;       /* لون عند المرور */
-  transform: scale(1.2);          /* تكبير الأيقونة */
+    background: linear-gradient(45deg, #f3c775, #b3802c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    transform: scale(1.2);
 }
 
 .widgets-section {

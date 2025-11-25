@@ -510,10 +510,16 @@
 }
 
 .service-card-title {
-  color:var(--main-color);
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+
+    /* Gradient Text */
+    background: linear-gradient(45deg, #f3c775, #b3802c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
 }
 
 .service-card-text {
@@ -555,10 +561,17 @@
 }
 
 .service-detail_title {
-  font-size: 32px;
-  color: #b3802c;
-  text-transform: uppercase;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    /* Gradient Text */
+    background: linear-gradient(45deg, #f3c775, #b3802c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
+
 
 .service-detail_description {
   font-size: 16px;
@@ -585,15 +598,38 @@
 }
 
 .service-contact-form h3 {
-  color: #b3802c;
+    font-weight: 700;
+
+    /* Gradient Text */
+    background: linear-gradient(45deg, #f3c775, #b3802c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
 }
 
+
 .service-contact-form button {
-  background-color: #b3802c;
-  border: #b3802c;
-  color: #fff;
-  font-weight: 600;
+    background: linear-gradient(45deg, #f3c775, #b3802c);
+    border: none; /* إزالة الحدود الصلبة */
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    /* Glassy / Shine */
+    box-shadow: 0 4px 15px rgba(243,199,117,0.4), 
+                0 6px 20px rgba(179,128,44,0.3);
 }
+
+.service-contact-form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(243,199,117,0.5),
+                0 8px 20px rgba(179,128,44,0.4);
+}
+
 
 .service-contact-form button:hover {
   background-color: #fff;

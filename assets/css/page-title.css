@@ -55,7 +55,7 @@
 	z-index:1;
 	padding: 18px 40px;
 	display: inline-block;
-	background-color:var(--main-color);
+	background:linear-gradient(45deg, #f3c775, #b3802c);
 }
 
 .page-title .bread-crumb li{

@@ -94,8 +94,17 @@
 }
 
 .slider-three_heading span{
-    color: var(--main-color);
+    background: linear-gradient(45deg, #f3c775, #b3802c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Glassy Golden Shine */
+    text-shadow:
+        0px 0px 6px rgba(243,199,117,0.6),   /* لمعة دهبي */
+        0px 0px 12px rgba(179,128,44,0.5),   /* توهج دهبي */
+     
 }
+
 
 .slider-three .swiper-slide-active .slider-three_heading{
     transition-delay: 800ms;

@@ -158,15 +158,24 @@
 }
 
 .info-block_one-icon {
-  font-size: 40px;
-  color: #b3802c;
-  margin-bottom: 15px;
+    font-size: 40px;
+    margin-bottom: 15px;
+
+    /* Gradient Color */
+    background: linear-gradient(45deg, #f3c775, #b3802c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
+
 
 .info-block_one-inner strong {
   display: block;
   font-size: 18px;
-  color: #b3802c;
+      /* Gradient Color */
+    background: linear-gradient(45deg, #f3c775, #b3802c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
 }
 
