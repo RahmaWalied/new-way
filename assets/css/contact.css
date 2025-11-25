@@ -21,7 +21,10 @@
 .contact-one .sec-title_title {
   font-size: 40px;
   font-weight: 900;
-  color:#b3802c;
+    background: linear-gradient(45deg, #f3c775 0%, #edb03d 50%, #b3802c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 10px;
 }

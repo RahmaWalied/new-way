@@ -880,19 +880,14 @@ img{
 
 .sec-title_title{
 	position: relative;
-    font-weight:700;
 	display: flex;
 	gap:18px;
 	letter-spacing:1px;
 	align-items:center;
-	 background: linear-gradient(45deg, #f3c775, #b3802c);
+    background: linear-gradient(45deg, #f3c775 0%, #e9af41 50%, #b3802c 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-    /* Glassy Golden Shine */
-    text-shadow:
-        0px 0px 6px rgba(243,199,117,0.6),   /* لمعة دهبي */
-        0px 0px 12px rgba(179,128,44,0.5),
+    font-weight: bold;
 	text-transform:uppercase;
 }
 
@@ -1447,4 +1442,11 @@ img{
         height: 42px;
         font-size: 20px;
     }
+}
+
+
+.copyright a{
+    background: linear-gradient(45deg, #f3c775 0%, #edb03d 50%, #b3802c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
