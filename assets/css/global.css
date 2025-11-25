@@ -889,6 +889,7 @@ img{
     -webkit-text-fill-color: transparent;
     font-weight: bold;
 	text-transform:uppercase;
+	display: inline-block;
 }
 
 .sec-title_heading{
