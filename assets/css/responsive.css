@@ -699,7 +699,6 @@
 	overflow: hidden;
 	border-radius: 50%;
 	display:inline-block;
-	border:15px solid var(--main-color);
 }
 }
 
